@@ -21,21 +21,22 @@ nav{
 }
 
 .logo img{
-    width: 3rem;
-    height: 3rem;
+    margin-left: 5%;
+    width: 4rem;
+    height: 4rem;
     border-radius: 10rem;
 }
 #check,.checkbtn{display: none;}
 
 .checkbtn{
     float: right;
-    font-size: larger;
-    margin-top: -2.2rem;
+    font-size: 150%;
+    margin-top: -3rem;
 }
 nav ul{
-    margin-right: 30%;
+    margin-right: 6%;
     float: right;
-    margin-top: -2rem;
+    margin-top: -2.5rem;
 }
 nav ul li{
     display: inline-block;
@@ -121,7 +122,6 @@ button:hover{
 }
 .card{
     display: flex;
-    width: 90%;
     margin:1rem auto;
 }
 .image{
@@ -131,20 +131,26 @@ button:hover{
     width: 50%;
     padding: 1rem 3rem;
     line-height: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-/* ------ About ---------- */
+/* -------------- About ---------- */
 .sidebar-bg{
     text-align: center;
     color: white;
     padding: 12rem 0;
     background-image: url(../images/Bakg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-blend-mode: color-burn;
     background-color: #0d10289f;
 
+}
+.h1-title{
+    text-align: center;
+    width: 95%;
+    color: green;
+    margin: auto;
 }
 .sidebar-bg .tittle, .sub-title{
     line-height: 2.5rem;
@@ -155,18 +161,57 @@ button:hover{
 }
 .mian-box{
     display: flex;
-    margin: 1rem;
     padding: 0.6rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .card-text,.card-head{
     line-height: 2rem;
     margin-left: 1rem;
 }
+.icon-cicle{
+    border-radius: 10rem;
+}
+.icon-center{
+    text-align: center;
+}
 .icon-cicle img{
+    border-radius: 10rem;
     width: 4rem;
     height: 4rem;
 }
+
+/* ----------- commit page ------ */
+
+.card-flex-line{
+    display: flex;
+    margin: 0.8rem 0;
+}
+
+.card-line{
+    width: 10rem;
+    margin: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+.line-orang{
+    height: 6px;
+    background-color: orange;
+}
+.line-black{
+    height: 6px;
+    background-color: #0D1028;
+}
+.subject{
+    width: 3.5rem;
+    margin: 0 0.8rem;
+}
+.name-center{
+    text-align: center;
+}
+.wd-line-1{width: 1rem;} .wd-line-2{width: 2rem;} .wd-line-3{width: 3rem;} .wd-line-4{width: 4rem;} .wd-line-5{width: 5rem;}
+.wd-line-6{width: 6rem;} .wd-line-7{width: 7rem;} .wd-line-8{width: 8rem;} .wd-line-9{width: 9rem;} .wd-line-10{width: 10rem;}
+
+
 
 
 /* ------ footer -------- */
@@ -204,7 +249,6 @@ ol li{
 }
 
 
-
 /* ------- Phone ----------- */
 
 @media(max-width: 700px){
@@ -218,7 +262,7 @@ ol li{
     nav ul{
         width: 100%;
         position: fixed;
-        top: 13%;
+        top: 18%;
         left: -100%;
         transition: all 1s;
         background-color: rgba(0, 0, 0, 0.795);
@@ -242,10 +286,6 @@ ol li{
     }
     .home{
         padding: 10rem 0;
-    }
-    .container{
-        width: 100%;
-        margin: auto;
     }
     .card{
         flex-wrap: wrap;
@@ -285,9 +325,6 @@ ol li{
     nav{
         padding:0 4rem;
     }
-    nav ul{
-        margin-right: 15%;
-    }
     .home{
         padding: 10rem 0;
     }
@@ -303,7 +340,8 @@ ol li{
 
 }
 .mian-box{
-    width: 45%;
+    margin: 0.4rem;
+    width: 48%;
 }
     /* ----- footer ----- */
     
@@ -322,26 +360,25 @@ ol li{
     nav{
         padding: 0 4rem;
     }
-    nav ul{
-        margin-right: 30%;
-    }
     .home{
         padding: 12rem;
     }
     .card{
-        width: 90%;
+        width: 96%;
         flex-wrap: wrap;
     }
-/* ------- about  -------- */
-.sidebar-bg .tittle, .sub-title{
-    width: 30rem;
-}
-.card{
-    width: 95%;
-}
-.mian-box{
-    width: 30%;
-}
+    /* ------- about  -------- */
+    .sidebar-bg .tittle, .sub-title{
+        width: 30rem;
+    }
+
+    .mian-box{
+        width: 32%;
+        margin: 0.4rem;
+    }
+    .card-body{
+        padding: 0 1.4rem;
+    }
 
 /* ------- footer ----------- */
     .card-ft{
