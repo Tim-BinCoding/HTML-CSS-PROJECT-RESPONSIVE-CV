@@ -21,7 +21,7 @@ nav{
 }
 
 .logo img{
-    margin-left: 5%;
+    margin-left: 2%;
     width: 4rem;
     height: 4rem;
     border-radius: 10rem;
@@ -65,6 +65,7 @@ nav ul li a:hover{
     background-color:  #0d1028bd;
 }
 .home .tittle ,.small{
+    padding: 0 2rem;
     text-align: center;
     color: white;
     line-height: 2.5rem;
@@ -76,7 +77,7 @@ nav ul li a:hover{
     width: 10rem;
 }
 button a{
-    color: white;
+    color: orange;
 }
 .btn{
     margin-top: 1rem;
@@ -96,7 +97,9 @@ button{
 button:hover{
     cursor: pointer;
     transition: all 0.6s;
-    opacity: 80%;
+    color: orange;
+    background-color: white;
+    border: 1px solid #0D1028;
 }
 .btn-rht{
     width: 5rem;
@@ -125,9 +128,13 @@ button:hover{
     margin:1rem auto;
 }
 .image{
+    border-top: 2px solid green;
+    border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .card-cotent{
+    border-top: 2px solid green;
+    border-radius: 0.5rem;
     width: 50%;
     padding: 1rem 3rem;
     line-height: 2rem;
@@ -138,7 +145,7 @@ button:hover{
 .sidebar-bg{
     text-align: center;
     color: white;
-    padding: 12rem 0;
+    padding: 11rem 0;
     background-image: url(../images/Bakg.jpg);
     background-size: cover;
     background-position: right;
@@ -161,6 +168,8 @@ button:hover{
 }
 .mian-box{
     display: flex;
+    border-top: 2px solid orange;
+    border-radius:0.5rem;
     padding: 0.6rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -212,6 +221,58 @@ button:hover{
 .wd-line-6{width: 6rem;} .wd-line-7{width: 7rem;} .wd-line-8{width: 8rem;} .wd-line-9{width: 9rem;} .wd-line-10{width: 10rem;}
 
 
+/* --------------- contact ----------- */
+.short-sentent{
+    width: 12rem;
+    margin:0 auto;
+    padding: 4rem 0;
+
+}
+form{
+    width: 100%;
+    padding: 1rem 0;
+}
+.bg-orange{
+    background-color: orange;
+}
+.head-form{
+    text-align: center;
+    color: white;
+}
+.form-group{
+    color: white;
+    margin: 1rem;
+}
+.form-control{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+.form-btn{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.form-control-btn{
+    font-size: larger;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    background-color: orange;
+    color: white;
+}
+.form-control-btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #0D1028;
+    transition: 1s;
+}
+.map{
+    text-align: center;
+}
+.map iframe{
+    width: 96%;
+    border-radius: 0.4rem;
+}
 
 
 /* ------ footer -------- */
@@ -280,9 +341,8 @@ ol li{
     #check:checked ~ ul{
         left: 0;
     }
-    .tittle, .small{
-        font-size: large;
-        padding: 0 1rem;
+    .tittle{
+        font-size: medium;
     }
     .home{
         padding: 10rem 0;
@@ -307,14 +367,13 @@ ol li{
         width: 100%;
     }
 
-
     /* ------ footer -------- */
     .card-footer{
         flex-wrap: wrap;
     }
     .card-ft{
-        width: 90%;
-        padding: 0 5rem;
+        width: 95%;
+        padding: 0 6rem;
     }
     
 }
@@ -328,7 +387,9 @@ ol li{
     .home{
         padding: 10rem 0;
     }
-    
+    .tittle{
+        font-size: large;
+    }
     
 /* -------------- about teblet ---------- */
 .sidebar-bg .tittle, .sub-title{
@@ -343,6 +404,15 @@ ol li{
     margin: 0.4rem;
     width: 48%;
 }
+
+/* ---------- contact ---- */
+.form-group{
+    width: 100%;
+}
+.pd-form{
+    padding: 0 1.5rem 0 0;
+}
+
     /* ----- footer ----- */
     
     .card-footer{
@@ -363,6 +433,9 @@ ol li{
     .home{
         padding: 12rem;
     }
+    .tittle{
+        font-size: larger;
+    }
     .card{
         width: 96%;
         flex-wrap: wrap;
@@ -379,10 +452,15 @@ ol li{
     .card-body{
         padding: 0 1.4rem;
     }
+/* ----------- contact -------- */
+.form-group{
+    width: 80%;
+    margin: 0.8rem auto;
+}
 
 /* ------- footer ----------- */
     .card-ft{
         width: 30%;
-        padding: 0 2rem;
+        padding: 0 5rem;
     }
 }
