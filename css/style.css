@@ -81,12 +81,10 @@ button a{
     margin-top: 1rem;
     border-radius: 0.5rem;
 }
-.mg-auto{
-    margin: auto;
-}
+
 button{
     color: white;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem;
     background-color: green;
 }
 button:hover{
@@ -95,10 +93,12 @@ button:hover{
     opacity: 80%;
 }
 .btn-rht{
+    width: 5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     clip-path: polygon(0 1%, 100% 0, 83% 100%, 0% 100%);clip-path: polygon(0 1%, 100% 0, 80% 100%, 0% 100%);
 }
 .btn-lft{
+    width: 5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -121,6 +121,7 @@ button:hover{
 }
 .image{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 1rem;
 }
 .card-cotent{
     width: 50%;
@@ -197,11 +198,11 @@ ol li{
         left: 0;
     }
     .tittle, .small{
-        font-size: medium;
-        padding: 0 5rem;
+        font-size: large;
+        padding: 0 3rem;
     }
     .both-btn{
-        width: 40%;
+        width: 38%;
     }
     .container{
         width: 100%;
@@ -209,7 +210,7 @@ ol li{
     }
     .card{
         flex-wrap: wrap;
-        width: 98%;
+        width: 100%;
         margin: 1rem auto;
     }
     .image{
@@ -217,6 +218,7 @@ ol li{
     }
     .card-cotent{
         width: 100%;
+        padding:1rem;
     }
     /* ------ footer -------- */
     .card-footer{
