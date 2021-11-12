@@ -40,14 +40,28 @@ nav ul{
 nav ul li{
     display: inline-block;
 }
-a{
+nav ul li a{
+    position: relative;
     color: black;
 }
-nav ul li a:hover{
-    border-bottom: 2px solid orange;
+nav ul li a::before{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -3px;
+    height: 4px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.2s linear;
+}
+nav ul li a:hover:before{
+    background-color: green;
+    transform: scaleX(1);
+    transform-origin: right;
 }
 .active{
-    border-bottom: 2px solid orange;
+    border-bottom: 4px solid green;
 }
 .container{
     width: 98%;
@@ -60,23 +74,23 @@ nav ul li a:hover{
     background-size: cover;
     background-position: center;
     background-blend-mode: color-burn;
-    background-color:  #0d1028bd;
+    background-color:  #0d1028c7;
 }
-.home .tittle ,.small{
+.strong-title{
+    color: orange;
+}
+.title ,.small{
     padding: 0 2rem;
     text-align: center;
     color: white;
     line-height: 2.5rem;
-    margin: auto;
 }
 .both-btn{
     margin: auto;
     margin-top: 1rem;
     display: flex;
     width: 12rem;
-   
 }
-
 .btn{
     margin-top: 1rem;
     border-radius: 0.2rem;
@@ -88,7 +102,8 @@ nav ul li a:hover{
     text-align: center;
 }
 button{
-    padding: 0.5rem;
+    color: white;
+    padding: 0.6rem;
     background-color: green;
 }
 button a{
@@ -185,6 +200,7 @@ button:hover{
 }
 .icon-center{
     text-align: center;
+    margin: 0.6rem auto;
 }
 .icon-cicle img{
     border-radius: 10rem;
@@ -234,9 +250,6 @@ button:hover{
 
 
 
-
-
-
 /* --------------- contact ----------- */
 .short-sentent{
     width: 12rem;
@@ -247,6 +260,11 @@ button:hover{
 form{
     width: 100%;
     padding: 1rem 0;
+}
+.card-center{
+    margin: auto;
+    width: 60%;
+    background-color: #0d1028;
 }
 .bg-orange{
     background-color: orange;
@@ -281,6 +299,9 @@ form{
     color: black;
     border: 1px solid #0D1028;
     transition: 1s;
+}
+textarea{
+    resize: none;
 }
 .map{
     text-align: center;
@@ -362,9 +383,6 @@ ol li{
         color: red;
     }
     
-    .tittle{
-        font-size: medium;
-    }
     .home{
         padding: 8.5rem 0;
     }
@@ -449,7 +467,7 @@ ol li{
         padding: 0 4rem;
     }
     .home{
-        padding: 11rem;
+        padding: 8rem;
     }
 
     .card{
