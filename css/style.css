@@ -73,15 +73,14 @@ nav ul li a:hover{
     margin: auto;
     margin-top: 1rem;
     display: flex;
-    width: 10rem;
+    width: 12rem;
+   
 }
-button a{
-    color: orange;
-}
+
 .btn{
     margin-top: 1rem;
     border-radius: 0.2rem;
-    width: 5.5rem;
+    width: 6.5rem;
 }
 .btn-download{
     width: 100%;
@@ -89,10 +88,14 @@ button a{
     text-align: center;
 }
 button{
-    color: white;
-    padding: 0.6rem;
+    padding: 0.5rem;
     background-color: green;
 }
+button a{
+    color: orange;
+    font-size: medium;
+}
+
 button:hover{
     cursor: pointer;
     transition: all 0.6s;
@@ -101,12 +104,12 @@ button:hover{
     border: 1px solid #0D1028;
 }
 .btn-rht{
-    width: 5rem;
+    width: 5.5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 }
 .btn-lft{
-    width: 5rem;
+    width: 5.5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
 }
