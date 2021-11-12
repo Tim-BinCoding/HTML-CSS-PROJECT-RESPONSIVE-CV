@@ -21,26 +21,24 @@ nav{
 }
 
 .logo img{
-    margin-left: 2%;
     width: 4rem;
     height: 4rem;
     border-radius: 10rem;
 }
-#check,.checkbtn{display: none;}
-
+#check, #checkmenu, #cancell{display: none;}
 .checkbtn{
     float: right;
-    font-size: 150%;
+    font-size: 180%;
     margin-top: -3rem;
 }
 nav ul{
     margin-right: 6%;
     float: right;
     margin-top: -2.5rem;
+    word-spacing: 2rem;
 }
 nav ul li{
     display: inline-block;
-    margin: 0 1rem;
 }
 a{
     color: black;
@@ -81,14 +79,14 @@ button a{
 }
 .btn{
     margin-top: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     width: 5.5rem;
 }
-.mg-auto{
-    margin-right: auto;
-    margin-left: auto;
+.btn-download{
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
 }
-
 button{
     color: white;
     padding: 0.6rem;
@@ -315,10 +313,7 @@ ol li{
 @media(max-width: 700px){
     nav{
         width: 100%;
-        padding: 0 4rem;
-    }
-    nav .logo{
-        font-size: 150%;
+        padding: 0 2.8rem 0 2rem;
     }
     nav ul{
         width: 100%;
@@ -335,12 +330,20 @@ ol li{
         line-height: 2rem;
     }
     nav ul li a{color: white;}
-    .checkbtn{
+    #checkmenu{
         display: block;
     }
     #check:checked ~ ul{
         left: 0;
     }
+    #check:checked ~ label #checkmenu{
+        display: none;
+    }
+    #check:checked ~ label #cancell{
+        display: block;
+        color: red;
+    }
+    
     .tittle{
         font-size: medium;
     }
@@ -431,7 +434,7 @@ ol li{
         padding: 0 4rem;
     }
     .home{
-        padding: 12rem;
+        padding: 11rem;
     }
     .tittle{
         font-size: larger;
