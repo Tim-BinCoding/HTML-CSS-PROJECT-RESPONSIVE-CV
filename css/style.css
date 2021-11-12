@@ -71,6 +71,7 @@ nav ul li a:hover{
 }
 .both-btn{
     margin: auto;
+    margin-top: 1rem;
     display: flex;
     width: 10rem;
 }
@@ -84,7 +85,7 @@ button a{
 }
 .btn-download{
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
     text-align: center;
 }
 button{
@@ -153,6 +154,7 @@ button:hover{
 }
 .h1-title{
     text-align: center;
+    font-size: larger;
     width: 95%;
     color: green;
     margin: auto;
@@ -217,6 +219,19 @@ button:hover{
 }
 .wd-line-1{width: 1rem;} .wd-line-2{width: 2rem;} .wd-line-3{width: 3rem;} .wd-line-4{width: 4rem;} .wd-line-5{width: 5rem;}
 .wd-line-6{width: 6rem;} .wd-line-7{width: 7rem;} .wd-line-8{width: 8rem;} .wd-line-9{width: 9rem;} .wd-line-10{width: 10rem;}
+
+/* -------------- Education page ----------- */
+.card-top{
+    margin-top: -5rem;
+}
+.btn-center{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
 
 
 /* --------------- contact ----------- */
@@ -348,7 +363,7 @@ ol li{
         font-size: medium;
     }
     .home{
-        padding: 10rem 0;
+        padding: 8.5rem 0;
     }
     .card{
         flex-wrap: wrap;
@@ -360,7 +375,7 @@ ol li{
     }
     .card-cotent{
         width: 100%;
-        padding:1rem;
+        padding: 1rem;
     }
     /* ------------------ about ---------- */
     .sidebar-bg .tittle, .sub-title{
@@ -375,8 +390,8 @@ ol li{
         flex-wrap: wrap;
     }
     .card-ft{
-        width: 95%;
-        padding: 0 6rem;
+        width: 96%;
+        padding: 0 4rem;
     }
     
 }
@@ -389,9 +404,6 @@ ol li{
     }
     .home{
         padding: 10rem 0;
-    }
-    .tittle{
-        font-size: large;
     }
     
 /* -------------- about teblet ---------- */
@@ -436,9 +448,7 @@ ol li{
     .home{
         padding: 11rem;
     }
-    .tittle{
-        font-size: larger;
-    }
+
     .card{
         width: 96%;
         flex-wrap: wrap;
