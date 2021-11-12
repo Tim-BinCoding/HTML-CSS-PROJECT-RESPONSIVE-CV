@@ -110,7 +110,6 @@ button a{
     color: orange;
     font-size: medium;
 }
-
 button:hover{
     cursor: pointer;
     transition: all 0.6s;
@@ -157,22 +156,20 @@ button:hover{
     line-height: 2rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
 /* -------------- About ---------- */
 .sidebar-bg{
     text-align: center;
     color: white;
-    padding: 11rem 0;
+    padding: 10rem 0;
     background-image: url(../images/Bakg.jpg);
     background-size: cover;
     background-position: right;
     background-blend-mode: color-burn;
     background-color: #0d10289f;
-
 }
 .h1-title{
     text-align: center;
-    font-size: larger;
+    font-size: 200%;
     width: 95%;
     color: green;
     margin: auto;
@@ -180,9 +177,6 @@ button:hover{
 .sidebar-bg .tittle, .sub-title{
     line-height: 2.5rem;
     margin: 0 auto;
-}
-.bg-green{
-    background-color: green;
 }
 .mian-box{
     display: flex;
@@ -207,14 +201,11 @@ button:hover{
     width: 4rem;
     height: 4rem;
 }
-
 /* ----------- commit page ------ */
-
 .card-flex-line{
     display: flex;
     margin: 0.8rem 0;
 }
-
 .card-line{
     width: 10rem;
     margin: 0 0.4rem;
@@ -240,22 +231,40 @@ button:hover{
 .wd-line-6{width: 6rem;} .wd-line-7{width: 7rem;} .wd-line-8{width: 8rem;} .wd-line-9{width: 9rem;} .wd-line-10{width: 10rem;}
 
 /* -------------- Education page ----------- */
+
+.h2-title{
+    color: orange;
+}
+.bg-dark{
+    background-color: #0D1028;
+    color: white;
+}
+.bg-green{
+    background-color: green;
+    color: white;
+}
+.bg-orange{
+    background-color: orange;
+    color: white;
+}
 .card-top{
-    margin-top: -5rem;
+    margin-top: -5.8rem;
 }
 .btn-center{
     width: 100%;
     text-align: center;
 }
-
-
-
+.card-border{
+    border-left: 2rem solid orange;
+    border-right: 2rem solid orange;
+    border-top: 2rem solid orange;
+    padding: 0;
+}
 /* --------------- contact ----------- */
 .short-sentent{
     width: 12rem;
     margin:0 auto;
     padding: 4rem 0;
-
 }
 form{
     width: 100%;
@@ -265,9 +274,6 @@ form{
     margin: auto;
     width: 60%;
     background-color: #0d1028;
-}
-.bg-orange{
-    background-color: orange;
 }
 .head-form{
     text-align: center;
@@ -310,8 +316,6 @@ textarea{
     width: 96%;
     border-radius: 0.4rem;
 }
-
-
 /* ------ footer -------- */
 footer{
     background-color: #0D1028;
@@ -345,10 +349,7 @@ ol li{
     color: green;
     margin-right: 1rem;
 }
-
-
 /* ------- Phone ----------- */
-
 @media(max-width: 700px){
     nav{
         width: 100%;
@@ -414,19 +415,16 @@ ol li{
         width: 96%;
         padding: 0 4rem;
     }
-    
 }
-
 /* -------- tablet ----------- */
 
-@media(min-width: 700px){
+@media(min-width: 650px){
     nav{
         padding:0 4rem;
     }
     .home{
         padding: 10rem 0;
     }
-    
 /* -------------- about teblet ---------- */
 .sidebar-bg .tittle, .sub-title{
     width: 25rem;
@@ -434,13 +432,11 @@ ol li{
 .card{
     flex-wrap: wrap;
     width: 100%;
-
 }
 .mian-box{
     margin: 0.4rem;
     width: 48%;
 }
-
 /* ---------- contact ---- */
 .form-group{
     width: 100%;
@@ -448,9 +444,7 @@ ol li{
 .pd-form{
     padding: 0 1.5rem 0 0;
 }
-
     /* ----- footer ----- */
-    
     .card-footer{
         flex-wrap: wrap;
     }
@@ -458,9 +452,7 @@ ol li{
         width: 45%;
         padding: 0 4rem;
     }
-
 }
-
 /* ------- Destop ------------ */
 @media(min-width: 900px){
     nav{
@@ -469,7 +461,6 @@ ol li{
     .home{
         padding: 8rem;
     }
-
     .card{
         width: 96%;
         flex-wrap: wrap;
@@ -491,7 +482,6 @@ ol li{
     width: 80%;
     margin: 0.8rem auto;
 }
-
 /* ------- footer ----------- */
     .card-ft{
         width: 30%;
