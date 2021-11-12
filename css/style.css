@@ -358,23 +358,23 @@ ol li{
     nav ul{
         width: 100%;
         position: fixed;
-        top: 18%;
-        left: -100%;
+        top: -100%;
+        left: 0;
         transition: all 1s;
-        background-color: rgba(0, 0, 0, 0.795);
+        background-color: #0D1028;
     }
     nav ul li{
         text-align: center;
         width: 100%;
         display: block;
-        line-height: 2rem;
+        line-height: 3rem;
     }
     nav ul li a{color: white;}
     #checkmenu{
         display: block;
     }
     #check:checked ~ ul{
-        left: 0;
+        top: 18%;
     }
     #check:checked ~ label #checkmenu{
         display: none;
@@ -385,7 +385,7 @@ ol li{
     }
     
     .home{
-        padding: 8.5rem 0;
+        padding: 8rem 0;
     }
     .card{
         flex-wrap: wrap;
