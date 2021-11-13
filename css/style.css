@@ -151,11 +151,11 @@ button:hover{
 .card-cotent{
     border-top: 2px solid green;
     border-radius: 0.5rem;
-    width: 50%;
     padding: 1rem 3rem;
     line-height: 2rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 /* -------------- About ---------- */
 .sidebar-bg{
     text-align: center;
@@ -248,18 +248,25 @@ button:hover{
     color: white;
 }
 .card-top{
-    margin-top: -5.8rem;
+    margin-top: -5rem;
 }
 .btn-center{
     width: 100%;
     text-align: center;
 }
 .card-border{
+    border-top: 0.5rem solid orange;
     border-left: 2rem solid orange;
-    border-right: 2rem solid orange;
-    border-top: 2rem solid orange;
     padding: 0;
 }
+
+.h1-strong{
+    color: white;
+    padding: 0.5rem 2.5rem;
+    background-color: #0D1028;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 10% 52%, 0 0);
+}
+
 /* --------------- contact ----------- */
 .short-sentent{
     width: 12rem;
@@ -270,11 +277,7 @@ form{
     width: 100%;
     padding: 1rem 0;
 }
-.card-center{
-    margin: auto;
-    width: 60%;
-    background-color: #0d1028;
-}
+
 .head-form{
     text-align: center;
     color: white;
@@ -349,9 +352,22 @@ ol li{
     color: green;
     margin-right: 1rem;
 }
-
+.h6-ft{
+    width: 100%;
+    border-top: 1px solid white;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+.h4-ft{
+    line-height: 2rem;
+}
+.form-ft .fa{
+    color: #0D1028;
+    margin-left: 4px;
+}
 /* ---------------- Phone ----------- */
-@media(max-width: 700px){
+@media(max-width: 650px){
     nav{
         width: 100%;
         padding: 0 2.8rem 0 2rem;
@@ -385,21 +401,26 @@ ol li{
         display: block;
         color: red;
     }
-    
     .home{
         padding: 8rem 0;
     }
     .card{
         flex-wrap: wrap;
         width: 100%;
-        margin: 1rem auto;
     }
     .image{
         width: 100%;
+        margin: 0 auto;
+    }
+    .card-text, .text{
+        font-size: medium;
     }
     .card-cotent{
         width: 100%;
         padding: 1rem;
+    }
+    .card-border{
+        border: 0;
     }
     /* ------------------ about ---------- */
     .sidebar-bg .tittle, .sub-title{
@@ -408,7 +429,6 @@ ol li{
     .mian-box{
         width: 100%;
     }
-
     /* ------ footer -------- */
     .card-footer{
         flex-wrap: wrap;
@@ -427,36 +447,48 @@ ol li{
     .home{
         padding: 10rem 0;
     }
-/* -------------- about teblet ---------- */
-.sidebar-bg .tittle, .sub-title{
-    width: 25rem;
-}
-.card{
-    flex-wrap: wrap;
-    width: 100%;
-}
-.mian-box{
-    margin: 0.4rem;
-    width: 48%;
-}
-/* ---------- contact ---- */
-.form-group{
-    width: 100%;
-}
-.pd-form{
-    padding: 0 1.5rem 0 0;
-}
+    .card-cotent{
+        width: 100%;
+        margin:0 auto;
+    }
+    .image{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card-text, .text{
+        font-size: smaller;
+    }
+    .card{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* -------------- about teblet ---------- */
+    .sidebar-bg .tittle, .sub-title{
+        width: 25rem;
+    }
+    .mian-box{
+        margin: 0.4rem;
+        width: 48%;
+    }
+    /* --------- Education --------- */
+    /* ---------- contact ---- */
+    .form-group{
+        width: 100%;
+    }
+    .pd-form{
+        padding: 0 1.5rem 0 0;
+    }
     /* ----- footer ----- */
     .card-footer{
         flex-wrap: wrap;
     }
     .card-ft{
         width: 45%;
-        padding: 0 4rem;
+        padding: 0 1rem;
     }
 }
 /* ------- Destop ------------ */
-@media(min-width: 900px){
+@media(min-width: 1000px){
     nav{
         padding: 0 4rem;
     }
@@ -466,6 +498,14 @@ ol li{
     .card{
         width: 96%;
         flex-wrap: wrap;
+    }
+    .card-cotent{
+        width: 50%;
+        margin:0 auto;
+    }
+    .image{
+        width: 50%;
+        margin: 0 auto;
     }
     /* ------- about  -------- */
     .sidebar-bg .tittle, .sub-title{
@@ -479,6 +519,10 @@ ol li{
     .card-body{
         padding: 0 1.4rem;
     }
+    /* ------------ education ----------- */
+    .card-text, .text{
+        font-size: larger;
+    }
 /* ----------- contact -------- */
 .form-group{
     width: 80%;
@@ -487,6 +531,6 @@ ol li{
 /* ------- footer ----------- */
     .card-ft{
         width: 30%;
-        padding: 0 5rem;
+        padding: 0 1rem;
     }
 }
