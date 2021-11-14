@@ -24,7 +24,7 @@ nav{
     font-size: 180%;
     font-weight: bolder;
     position: absolute;
-    bottom: 0.8rem;
+    bottom: 0.4rem;
     width: 100%;
     text-align: center;
 }
@@ -93,7 +93,6 @@ nav ul li a:hover:before{
 .btn{
     margin-top: 1rem;
     border-radius: 0.2rem;
-    width: 6.5rem;
 }
 .btn-download{
     width: 100%;
@@ -102,7 +101,7 @@ nav ul li a:hover:before{
 }
 button{
     color: white;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem;
     background-color: green;
 }
 button a{
