@@ -102,7 +102,7 @@ nav ul li a:hover:before{
 }
 button{
     color: white;
-    padding: 0.6rem;
+    padding: 0.5rem;
     background-color: green;
 }
 button a{
@@ -117,12 +117,10 @@ button:hover{
     border: 1px solid #0D1028;
 }
 .btn-rht{
-    width: 5.5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 }
 .btn-lft{
-    width: 5.5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
 }
