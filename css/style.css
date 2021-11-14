@@ -24,7 +24,7 @@ nav{
     font-size: 180%;
     font-weight: bolder;
     position: absolute;
-    top: 0;
+    bottom: 0.8rem;
     width: 100%;
     text-align: center;
 }
@@ -81,16 +81,14 @@ nav ul li a:hover:before{
     color: orange;
 }
 .title ,.small{
-    padding: 0 2rem;
+    padding: 0 0.5rem;
     text-align: center;
     color: white;
     line-height: 2.5rem;
 }
 .both-btn{
-    margin: auto;
-    margin-top: 1rem;
-    display: flex;
-    width: 12rem;
+    text-align: center;
+    width: 100%;
 }
 .btn{
     margin-top: 1rem;
@@ -143,6 +141,10 @@ button:hover{
 .card{
     display: flex;
     margin:1rem auto;
+}
+.mian-box:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .image{
     border-top: 2px solid green;
@@ -347,8 +349,6 @@ footer{
     background-color: #0D1028;
 }
 .card-footer{
-    margin: auto;
-    width: 90%;
     display: flex;
 }
 .card-ft{
@@ -365,7 +365,7 @@ footer{
     margin: 1rem 0;
 }
 ol li{
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 .social-media{
     margin: 1rem 0;
@@ -379,11 +379,11 @@ ol li{
     width: 100%;
     border-top: 1px solid white;
     color: white;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     text-align: center;
 }
 .h4-ft{
-    line-height: 2rem;
+    line-height: 4rem;
 }
 .form-ft .fa{
     color: #0D1028;
@@ -396,7 +396,7 @@ ol li{
     }
     nav ul{
         width: 100%;
-        padding-bottom: 4rem;
+        padding-bottom: 3rem;
         position: fixed;
         top: -100%;
         left: 0;
@@ -414,7 +414,7 @@ ol li{
         display: block;
     }
     #check:checked ~ ul{
-        top: 6%;
+        top: 7%;
     }
     #check:checked ~ label #checkmenu{
         display: none;
@@ -456,7 +456,7 @@ ol li{
     }
     .card-ft{
         width: 96%;
-        padding: 0 4rem;
+        padding: 0 1rem;
     }
 }
 /* -------- tablet ----------- */
@@ -480,9 +480,6 @@ ol li{
         width: 100%;
     }
     /* -------------- about teblet ---------- */
-    .sidebar-bg .tittle, .sub-title{
-        width: 25rem;
-    }
     .mian-box{
         margin: 0.4rem;
         width: 48%;
@@ -522,10 +519,6 @@ ol li{
         margin: 0 auto;
     }
     /* ------- about  -------- */
-    .sidebar-bg .tittle, .sub-title{
-        width: 30rem;
-    }
-
     .mian-box{
         width: 32%;
         margin: 0.4rem;
