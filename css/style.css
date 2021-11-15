@@ -68,6 +68,7 @@ nav ul li a:hover:before{
     width: 98%;
     margin: auto;
 }
+
 .home{
     width: 100%;
     margin: auto;
@@ -501,7 +502,7 @@ ol li{
 /* ------- Destop ------------ */
 @media(min-width: 1000px){
     .home{
-        padding: 8rem;
+        padding: 9rem;
     }
     .card{
         width: 96%;
